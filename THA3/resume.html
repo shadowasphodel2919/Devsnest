@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            try
+        </title>
+        <style>
+            html {
+    font-family: "Bahnschrift";
+  }
+            .base{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding-bottom: 10px;
+            }
+            .base > div{
+                
+                background-color: #C2CAE8;
+                padding: 10px;
+
+            }
+            .base .odd{
+                margin-left: 300px;
+                border-left: 1px solid #011C27;
+            }
+            .base .even{
+                margin-right: 300px;
+                color: aliceblue;
+                border-right: 1px solid #011C27;
+            }
+            .base .title-name{
+                background-color: #011C27;
+                color: aliceblue;
+                padding-left: 30px;
+                padding-top: 35px;
+            }
+            .base .pic-tile{
+                background-color: #011C27;
+            }
+            .base .contact-block{
+                background-color: #545677;
+                background-color: #03254E;
+                color: aliceblue;
+                
+            }
+            .base .edu-block{
+                background-color: #03254E;
+                background-color: #588157;
+                color : #03254E;
+            }
+            .base .skill-block{
+                background-color: #C2EABA;
+                color : #03254E;
+                border-bottom: 1px solid #011C27;
+                padding-bottom: 20px;
+            }
+            img{                
+                margin-left : 30%;
+                border-radius: 50%;
+                width : 150px;
+                height : 150px;
+            }
+            .skill-bar{
+                width : 100%;
+                background-color: aliceblue;
+            }
+            .skills{
+                margin-top: 1px;
+                text-align: right;
+                padding-top: 10px;
+                padding-bottom: 1px;
+                color: white;
+            }
+            .html{
+                width: 80%;
+                background-color: #588157;
+            }
+            .python{
+                width: 70%;
+                background-color: #588157;
+            }
+            .c{
+                width: 65%;
+                background-color: #588157;
+            }
+
+
+            .base .profile-block{
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: #c2cae8;                
+            }
+
+            .base .work-block{
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: #d5daef;
+            }
+
+            .base .project-block{
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: #edeff8;
+                border-bottom: 1px solid #011C27;
+            }
+
+            .base .odd .left-head{
+                border-bottom: 1px solid #011C27;
+            }
+
+            .base .even .contact-head{
+                border-bottom: 1px solid #edeff8;
+            }
+
+            .base .even .edu-head{
+                border-bottom: 1px solid #03254E;
+            }
+
+            .base .even .skill-head{
+                border-bottom: 1px solid #03254E;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "base">
+
+
+            <div class = "odd title-name">
+                <h2>Taha Jamal</h2>
+                <h3>Student</h3>
+            </div>
+            
+            
+            <div class = "even pic-tile">
+                <img src="https://images.unsplash.com/photo-1617297582583-43f10824e4c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt = "Profile">
+            </div>
+
+
+            <div class = "odd profile-block">
+
+                <div class = "left-head"><h3>Profile</h3></div>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, labore explicabo voluptatem reprehenderit voluptatibus eos totam accusamus accusantium quo alias, amet non fugit atque voluptatum possimus dolore consectetur itaque ullam.
+                </p>
+            </div>
+
+
+            <div class = "even contact-block">
+                <div class = "contact-head">
+                    <h3>Contact</h3>
+                </div>
+                <div class = "contact-main">
+                    <p>Email : taha.1923csi1071@kiet.edu
+                        <br>
+                        <br>
+                        GitHub : @stupidsherlock
+                        <br>
+                        <br>
+                        Address : Lucknow
+                    </p>
+                </div>
+            </div>
+
+
+            <div class = "odd work-block">
+
+                <div class = "left-head"><h3>Work Experience</h3></div>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem incidunt delectus nostrum reiciendis nulla ad quo animi expedita neque ducimus iure nam est, nemo, tempore velit quae, odio doloribus sed.
+                </p>
+            </div>
+
+
+            <div class = "even edu-block">
+                <div class="edu-head">
+                    <h3>Education</h3>
+                </div>
+                
+                <div class = "edu-inner">
+                    <div>
+                        <p>12th<br>Lucknow Public School<br><br>
+                        10th<br>Lucknow Public School<br><br>
+                        BTech<br>KIET Group Of Institutions<br></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class = "odd project-block">
+                <div class = "left-head"><h3>Projects</h3></div>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem incidunt delectus nostrum reiciendis nulla ad quo animi expedita neque ducimus iure nam est, nemo, tempore velit quae, odio doloribus sed.
+                </p>
+            </div>
+
+
+            <div class = "even skill-block">
+                <div class = "skill-head">
+                    <h3>Skills</h3>
+                </div>
+                
+                <div class = "skill-inner">
+                    <p>Java</p>
+                    <div class="skill-bar">
+                    <div class="skills html"></div>
+                    </div>
+                    <p>HTML</p>
+                    <div class="skill-bar">
+                    <div class="skills html"></div>
+                    </div>
+
+                    <p>Python</p>
+                    <div class="skill-bar">
+                    <div class="skills python"></div>
+                    </div>
+
+                    <p>C#</p>
+                    <div class="skill-bar">
+                    <div class="skills c"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
