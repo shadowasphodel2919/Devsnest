@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .clock{
+            display: flex;
+    justify-content: center;
+        }
+        .dot {
+            height: 1000px;
+            width: 1000px;
+            box-shadow: 0 0 10px rgb(160 160 160);
+            background-color: darkslategray;
+            border-radius: 50%;
+            position: absolute;
+            z-index: -1;
+            margin: auto;
+        }
+        .dot1 {
+            margin: auto;
+            height: 900px;
+            width: 900px;
+            background-color: honeydew;
+            border-radius: 50%;
+            margin-top: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hr-pin{
+            position: absolute;
+            height: 5px;
+            background: linear-gradient(90deg,rgba(255, 255, 255, 0) 50%, black 50%);
+            border-radius: 10px;
+            width: 40vh;
+            transform: rotate(100deg);
+        }
+        .min-pin{
+            position: absolute;
+            height: 5px;
+            background: linear-gradient(90deg,rgba(255, 255, 255, 0) 50%, black 50%);
+            border-radius: 10px;
+            width: 45vh;
+            transform: rotate( 45deg);
+        }
+        .sec-pin{
+            position: absolute;
+            height: 5px;
+            background: linear-gradient(90deg,rgba(255, 255, 255, 0) 50%, black 50%);
+            border-radius: 10px;
+            width: 50vh;
+            transform: rotate( 180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class = "clock">
+        <div class="dot"></div>
+        <div class="dot1">
+
+            <div class = "hr-pin"></div>
+            <div class = "min-pin"></div>
+            <div class = "sec-pin"></div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
