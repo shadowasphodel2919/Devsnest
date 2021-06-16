@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            background-image: url('img_girl.jpg');
+        }
         .main{
             display: flex;
             justify-content: center;
@@ -15,7 +18,7 @@
             width: 120px;
             font-size: 35px;
             border: none;
-            background-color: #829CBC;
+            background-color: #646a71;
             font-family: Calculator, sans-serif;
             border-radius: 0.2rem;
             box-shadow: 1px 1px 2px #888888;
@@ -30,7 +33,6 @@
             border-width: 5px;
             font-family: Calculator, sans-serif;
             color: #fff;
-            text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
             background-color: #010a01;
         }
         h1{
@@ -40,15 +42,22 @@
         .calc{
             border: black 2px solid;
             padding: 10px;
+            box-shadow: 2px 2px 2px 2px #888888;
         }
         .calcInner{
             border: black 2px solid;
             padding: 30px;
-            background-color: #B8C5D6;
+            background-color: rgb(40, 41, 42);
             box-shadow: 2px 2px 2px 2px #888888;
         }
-        button :hover {
-            background-color: black;
+        button:hover{
+            background-color: #404448;
+        }
+        .equals{
+            background-color: goldenrod;
+        }
+        .equals button:hover {
+            background-color: #010a01;
         }
     </style>
 </head>
@@ -62,8 +71,8 @@
                     <tr>
                         <td><button>(</button></td>
                         <td><button>)</button></td>
-                        <td><button>AC</button></td>
-                        <td><button style = "width : 59px; margin-right : 2px">%</button><button style = "width : 59px">X</button></td>
+                        <td><button style="background-color: rgb(81, 2, 133);">AC</button></td>
+                        <td><button>%</button></td>
                     </tr>
                     <tr>
                         <td><button>7</button></td>
@@ -86,7 +95,7 @@
                     <tr>
                         <td><button>0</button></td>
                         <td><button>.</button></td>
-                        <td><button>=</button></td>
+                        <td><button style="background-color: rgb(159, 118, 15);">=</button></td>
                         <td><button>+</button></td>
                     </tr>
                 </table>
