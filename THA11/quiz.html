@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        *{
+            font-family: Bahnschrift;
+        }
+        body{
+            background-color: rgb(198, 204, 241);
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+        }
+        .question{
+            padding-left: 20px;
+            background-color: black;
+            color: aliceblue;
+            width: 60vw;
+            height: 10vw;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        .options{
+            height: auto;
+            width: 40vw;
+            margin-top: 30px;   
+            display: flex;  
+            flex-flow: column;       
+        }
+        .option{
+            background-color: aliceblue;
+            border-radius: 10px;
+            padding-left: 20px;
+            border: 3px solid black;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            box-shadow: 2px 2px 2px black;
+        }
+        .option:hover {
+            box-shadow: 2px 2px 2px black inset;
+        }
+        .correct{
+            background-color: green;
+            color: white;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+        .wrong{
+            background: red;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .scoreboard{
+            margin-top: 30px;
+            padding-left: 10px;
+            background-color: black;
+            color: white;
+            width: 200px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            visibility: hidden;
+            border-radius: 20px;
+        }
+        .playagain{
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            margin-top: 200px;
+            width: 100px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            visibility: hidden;
+            box-shadow: 2px 2px 2px black;
+        }
+        .playagain:hover {
+            box-shadow: 2px 2px 2px black inset;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="quiz">
+            <div class="question"></div>
+            <div class="options"></div>            
+        </div>
+        <div class="scoreboard"></div>
+        <div class="playagain">Play Again</div>
+    </div>
+</body>
+<script src = "script.js"></script>
+</html>
