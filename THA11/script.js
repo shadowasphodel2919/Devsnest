@@ -10,21 +10,48 @@ var correctCount = 0;
 
 var questions = [
     {
-        q:"What you know about rolling down in the deep?",
+        q:"The series Friends is set in which city?",
         a:[
-            {val:"A Lot", check: true},
-            {val:"I have somewhat idea", check: false},
-            {val:"Nothing", check: false},
-            {val:"A little", check: false}
+            {val:"New York City", check: true},
+            {val:"Los Angeles", check: false},
+            {val:"Ghaziabad", check: false},
+            {val:"Seattle", check: false}
         ]
     },
     {
-        q:"When does your brain goes numb?",
+        q:"What pet did Ross own?",
         a:[
-            {val:"When I use flexbox.", check: false},
-            {val:"Nothing phases me.", check: true},
-            {val:"When I use grid.", check: false},
-            {val:"When I use tables.", check: false}
+            {val:"A dog named Keith", check: false},
+            {val:"A rabbit called Lancelot", check: false},
+            {val:"A monkey named Marcel", check: true},
+            {val:" A lizard named Alistair", check: false}
+        ]
+    },
+    {
+        q:"What is Monica skilled at?",
+        a:[
+            {val:"Bricklaying", check: false},
+            {val:"Cooking", check: true},
+            {val:"American football", check: false},
+            {val:"Singing", check: false}
+        ]
+    },
+    {
+        q:" What’s the name of Joey’s penguin?",
+        a:[
+            {val:"Snowflake", check: false},
+            {val:"Waddle", check: false},
+            {val:"Huggsy", check: true},
+            {val:"Bobber", check: false}
+        ]
+    },
+    {
+        q:"What song is Phoebe best known for?",
+        a:[
+            {val:"Smelly Cat", check: true},
+            {val:"Smelly Dog", check: false},
+            {val:"Smelly Rabbit", check: false},
+            {val:"Smelly Worm", check: false}
         ]
     }
 ]
@@ -42,7 +69,7 @@ function scoreChange(){
 }
 //question creation
 function createQuestion(){
-    if(i == 2){
+    if(i == questions.length){
         console.log("Completed");
         quiz.setAttribute("style","display:none");
         scoreBoard.setAttribute("style","visibility:visible");
