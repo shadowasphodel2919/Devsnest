@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+        body{
+            font-family: 'Shadows Into Light', cursive;            
+            background-color: rgb(24, 22, 22);
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+        }
+        img{
+            position: absolute;
+            z-index: -1;
+            padding-top: 60px;
+            width: 1000px;
+            padding-bottom: 100px;
+        }
+        image{
+            position: relative;
+        }
+        quote{
+            padding-top: 80px;
+            padding-left: 30px;
+            position: absolute;
+            width: 20%;
+            color:black;
+            font-size: 20px;
+            z-index: 1;
+            color: azure;
+        }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        button{
+            margin-top: 30px;
+            margin-right: 10px;
+            height: 40px;
+            background-color: black;
+            color: rgb(48, 138, 26);
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left"></div>
+        <div class="image">
+            <div class="buttons">
+                <button class="quo">Change Quote</button>
+                <button class="pic">Change Picture</button>
+            </div>
+            <img src = ""> 
+            <quote></quote>
+        </div>
+        <div class="right"></div>
+    </div>   
+</body>
+<script src = "script.js"></script>
+</html>
