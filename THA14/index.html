@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            width: 200vw;
+            height: 80px;
+        }
+        .bottom{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+            background-color: black;
+            color: azure;
+        }
+        .debug{
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body onload="OnLoad()" onresize="OnResize()" onbeforeprint="OnBeforePrint()" onblur="OnBlur()">
+    <div class="top">
+        <div class="head">Event Handlers</div>
+    </div>
+    <div class="bottom">
+        <div class="debug">
+            This is the debug window.
+        </div>
+    </div>
+</body>
+<script src = "script.js"></script>
+</html>
