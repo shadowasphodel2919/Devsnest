@@ -1,0 +1,93 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.main{
+  width: 600px;
+  height: 600px;
+  background-color: #0B132B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: aliceblue;
+  padding: 5px;
+  border-radius: 5px;
+}
+.main-head{
+  font-size: 30px;
+  font-family: Bahnschrift;
+  padding: 20px;
+  padding-top: 0;
+}
+.block{
+  color: aliceblue;
+  background-color: #3A506B;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.card{
+  display: block;
+  background-color: #1C2541;
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 2px 2px #000;
+}
+.card:hover{
+  box-shadow: 0 0 2px 2px #000 inset;
+}
+.head{
+  padding: 0px 0px 5px 0px;
+  font-family: Bahnschrift;
+  font-size: 20px;
+}
+.body{
+  font-size: 14px;
+}
+.headPart{
+  display: flex;
+  flex-direction: row;
+}
+.del{
+  height: 20px;
+  font-size: 10px;
+}
+.edit{
+  margin-left: auto;
+  height: 20px;
+  font-size: 10px;
+}
+.addForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.addForm > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.headPart{
+  display: flex;
+  flex-direction: row;
+}
+.headInput, .bodyInput{
+  height: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+.submitButton{
+  height: 30px;
+  width: 100px;
+}
