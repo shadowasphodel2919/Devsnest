@@ -4,29 +4,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 const Options = () => {
-  const [item,setitem] = useState([
-    {
-      head : "Pizza", body : "56"
-    },
-    {
-      head : "Burger", body : "69"
-    },
-    {
-      head : "Coke", body : "500"
-    },
-    {
-      head : "Brownie", body : "180"
-    },
-    {
-      head : "Fried Rice", body : "90"
-    },
-    {
-      head : "Lassagne", body : "200"
-    },
-    {
-      head : "Pani Puri", body : "10"
-    }
-  ]);
+  const [item,setitem] = useState([]);
   let array = [];
 
   for(let i = 0; i < item.length; i++){
@@ -41,7 +19,7 @@ const Options = () => {
         <EditCard item = {item} setitem = {setitem}></EditCard>
           <div className="block">
             
-            {array}
+            {(array.length===0)?<div className="empty">Start Adding Items</div>:array}
           </div>
       </div>
   );

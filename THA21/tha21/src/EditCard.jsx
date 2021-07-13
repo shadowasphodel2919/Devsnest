@@ -13,6 +13,8 @@ const EditCard = (obj) => {
     const AddItem = e => {
         e.preventDefault();
         addItem({head, body});
+        sethead('');
+        setbody('');
         console.log(head);
         console.log(body);
     };

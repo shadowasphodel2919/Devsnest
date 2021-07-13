@@ -5,47 +5,64 @@ const Card = (obj) => {
 
     const [editing, setediting] = useState(false);
 
+    const [headEdit, setheadEdit] = useState(head);
+
+    const [bodyEdit, setbodyEdit] = useState(body);
+
 
     return (
         <div className="card">
             <div className="headPart">
                 {editing?(
-                    <input
-                    type = 'text'
-                    name = 'head'
-                    id = 'head'
+                    <input type = "text"
+                    className = "headEdit"
+                    name = "head"
+                    id = "head"
                     required
-                    value = {head}
-                    /*onChange = {e => setitem(item.map((item, i) => (i === index ? {...item, ...e.target.value} : item)))}*/></input>
-                ) : (
-                    <div className="head">{head}</div>
-                )}               
+                    defaultValue = {headEdit}
+                    onChange={(e)=>{
+                        let newItem = item;
+                        newItem[index].head = e.target.value;
+                        console.log(newItem[index].head);
+                        setitem(newItem);
+                        setheadEdit(e.target.value);
+                        console.log(headEdit);
+                    }}></input>
+                ):(
+                    <div className="head">{headEdit}</div>
+                )}                     
 
                 <button 
-                className = "edit" onClick={() => setediting(!editing)}>
-                    {editing?'Done':'Edit'}</button>
+                className = "edit"
+                onClick = {()=>{setediting(!editing)}}>
+                    {editing?'Done':'Edit'}
+                </button>
 
-                <button 
-                className = "del"
+                <button className = "del"
                 onClick={()=>{
                     const newItems = item.filter((item,id)=>id!==index);
                     setitem(newItems);
                     console.log(newItems);
                 }}>Delete</button>
-
-            </div>
-
-            {editing?(<input
-                    type = 'text'
-                    name = 'body'
-                    id = 'body'
-                    required
-                    value = {body}
-                    onChange = {e => setitem()}></input>
-                ):(
-                <div className="body">you have consumed {body} cals.</div>
-                )}
-            
+            </div>    
+            {editing?(
+                <input type = "number"
+                className = "bodyEdit"
+                name = "body"
+                id = "body"
+                required
+                defaultValue = {bodyEdit}
+                onChange={(e)=>{
+                    let newItem = item;
+                    newItem[index].body = e.target.value;
+                    console.log(newItem[index].body);
+                    setitem(newItem);
+                    setbodyEdit(e.target.value);
+                    console.log(bodyEdit);
+                }}></input>
+            ):(
+                <div className="body">you have consumed {bodyEdit} cals.</div>
+            )}          
         </div>
     );
 };
