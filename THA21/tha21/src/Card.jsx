@@ -5,11 +5,6 @@ const Card = (obj) => {
 
     const [editing, setediting] = useState(false);
 
-    const [headEdit, setheadEdit] = useState(head);
-
-    const [bodyEdit, setbodyEdit] = useState(body);
-
-
     return (
         <div className="card">
             <div className="headPart">
@@ -19,13 +14,11 @@ const Card = (obj) => {
                     name = "head"
                     id = "head"
                     required
-                    defaultValue = {headEdit}
+                    defaultValue = {item[index].head}
                     onChange={(e)=>{
                         let newItem = item;
                         newItem[index].head = e.target.value;
                         setitem(newItem);
-                        setheadEdit(e.target.value);
-                        console.log(headEdit);
                     }}></input>
                 ):(
                     <div className="head">{item[index].head}</div>
@@ -53,13 +46,11 @@ const Card = (obj) => {
                 name = "body"
                 id = "body"
                 required
-                defaultValue = {bodyEdit}
+                defaultValue = {item[index].body}
                 onChange={(e)=>{
                     let newItem = item;
                     newItem[index].body = e.target.value;
                     setitem(newItem);
-                    setbodyEdit(e.target.value);
-                    console.log(bodyEdit);
                 }}></input>
             ):(
                 <div className="body">you have consumed {item[index].body} cals.</div>
