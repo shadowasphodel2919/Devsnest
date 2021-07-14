@@ -23,18 +23,20 @@ const Card = (obj) => {
                     onChange={(e)=>{
                         let newItem = item;
                         newItem[index].head = e.target.value;
-                        console.log(newItem[index].head);
                         setitem(newItem);
                         setheadEdit(e.target.value);
                         console.log(headEdit);
                     }}></input>
                 ):(
-                    <div className="head">{headEdit}</div>
+                    <div className="head">{item[index].head}</div>
                 )}                     
 
                 <button 
                 className = "edit"
-                onClick = {()=>{setediting(!editing)}}>
+                onClick = {()=>{
+                    setediting(!editing);
+                    console.log(item);
+                    }}>
                     {editing?'Done':'Edit'}
                 </button>
 
@@ -55,13 +57,12 @@ const Card = (obj) => {
                 onChange={(e)=>{
                     let newItem = item;
                     newItem[index].body = e.target.value;
-                    console.log(newItem[index].body);
                     setitem(newItem);
                     setbodyEdit(e.target.value);
                     console.log(bodyEdit);
                 }}></input>
             ):(
-                <div className="body">you have consumed {bodyEdit} cals.</div>
+                <div className="body">you have consumed {item[index].body} cals.</div>
             )}          
         </div>
     );
