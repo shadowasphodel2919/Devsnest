@@ -2,8 +2,8 @@ import { useState } from "react";
 const Meme = ({meme, setMeme}) => {
     const [form, setForm] = useState({
         template_id: meme.id,
-        username: "tahaha",
-        password: "taha1234",
+        username: "",//Enter username
+        password: "",//Enter password
         boxes: [],
     });
     const generateMeme = () => {
