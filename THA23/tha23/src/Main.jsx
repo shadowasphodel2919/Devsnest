@@ -1,21 +1,14 @@
-import { useEffect } from "react";
 import useQuery from "./useQuery";
-let rand = 100;
+import useToggle from "./useToggle";
 const Main = () => {
+    const [isTextChanged, setIsTextChanged] = useToggle();
+    const query = useQuery();
     return (
         <div className="main">
-            <button onClick={()=>{
-                console.log("clicked");
-                rand = getRand();
-            }}>Change</button>
-            <img src={useQuery(rand).response} alt = ""/>
+            <button onClick={query.getNewURL}>Change</button>
+            <img src={query.response} alt = ""/>
+            <button onClick={setIsTextChanged}>{isTextChanged?'Toggled':'Click to Toggle'}</button>
         </div>
     );
 }
 export default Main;
-
-const getRand = () => {
-    var rand = Math.floor(Math.random() * (1084));
-    console.log(rand);
-    return rand;
-}
