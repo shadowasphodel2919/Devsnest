@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+ /*
+.container{
+  width: 100px;
+  height: 50vh;
+}*/
+.Nav{
+  width: 100vw;
+  height: 50px;
+  margin-bottom: 10px;
+}
+img{
+  object-fit: cover;
+  max-height: 400px;
+  width: 100px;
+}
+Carousel{
+  height: 400px;
+  width: 100px;
+}
+.cardRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
