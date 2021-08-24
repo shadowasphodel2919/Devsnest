@@ -8,7 +8,7 @@ const ListTodo = () => {
     return (
         <div>
             {todos.map((todo,index) => (
-                <div>
+                <div key={todo.title}>
                     <h5 style={{display:"inline-block"}}>
                         {todo.title}
                     </h5>
