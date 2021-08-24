@@ -1,6 +1,10 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { removeItem } from "../actions";
+
 const ListTodo = () => {
     const todos = useSelector((state) => state.todo);
+    const dispatch = useDispatch();
+
     return (
         <div>
             {todos.map((todo,index) => (
@@ -8,7 +12,9 @@ const ListTodo = () => {
                     <h5 style={{display:"inline-block"}}>
                         {todo.title}
                     </h5>
-            <button>Delete</button>
+            <button onClick={()=>{
+                dispatch(removeItem(index));
+            }}>Delete</button>
                 </div>
             ))}            
         </div>
