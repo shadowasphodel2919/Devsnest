@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+}
+.App {
+  text-align: center;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.form input{
+  padding: 10px;
+}
+.form button{
+  margin: 0px 10px;
+}
+.card{
+  margin-top: 50px;
+  border-radius: 4px;
+  box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+/*
+  &:hover {
+    transform: perspective(800px) rotateY(-4deg);*/
+}
+.weather{
+  text-align: center;
+  
+}
+.card{
+  background-image: url(
+    "https://cdn.dribbble.com/users/3639405/screenshots/8761499/media/9badcccb740ab6cfceda0e5d25bf87a4.jpg?compress=1&resize=1600x1200"
+  );
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+}
+.card .container{
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  color: aliceblue;
+}
+.wind,.humidity,.precipitation{
+  font-size: 0.8rem;
+  color: rgb(256, 256, 256, 0.7);
+} 
+.card .container .val{
+  font-size: 1.5rem;
+}
+.card .container span{
+  font-size: 0.8rem;
+}
+.weather .card .text{
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+.weather .card .city{
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+.weather .card .region,.country{
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+.weather .card .country{
+  font-size: 0.5rem;
+}
+.weather .card .icon{
+  width: 100px;
+  height: 100px;
+  padding-bottom: 10px;
+  object-fit: cover;
+}
+.weather .card .text{
+  color:rgba(0, 0, 0, 0.8);
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
