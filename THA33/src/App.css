@@ -1,0 +1,48 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+.App.dark{
+  background-color: black;
+  color: white;
+}
+.iter{
+  display:inline-block ;
+}
+.theme-toggle{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
+.theme-toggle.dark{
+  background-color: white;
+  color: black;
+}
+.todos{
+  width: 100%;
+  height: 100%;
+}
+.todos.dark{
+  background-color: black;
+  color: white;
+}
+.todos input{
+  font-size: 1.2rem;
+  padding:10px;
+}
+.todos button{
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.todo-list{
+  margin: 10px;
+}
