@@ -14,4 +14,8 @@ This repository contains the assignments completed over the duration of the Devs
 <a href="https://shadowasphodel2919.github.io/Devsnest/THA8/grid.html">Grid</a>
 <a href="https://shadowasphodel2919.github.io/Devsnest/THA9/index.html">Seats Book</a>
 <a href="https://shadowasphodel2919.github.io/Devsnest/THA10/game.html">Card Game</a>
+<a href="https://shadowasphodel2919.github.io/Devsnest/THA11/quiz.html">Quiz Game</a>
+<a href="https://shadowasphodel2919.github.io/Devsnest/THA12/index.html">ToDo List</a>
+<a href="https://shadowasphodel2919.github.io/Devsnest/THA13/index.html">Quote App</a>
+<a href="https://shadowasphodel2919.github.io/Devsnest/THA14/index.html">Event Handler</a>
 
