@@ -2,7 +2,6 @@
 <br>
     <h2>Devsnest</h2>
 		<img src="devsnest.jpg" width="200" height="200" alt="logo">
-	</a>
 	<br>
 </div>
 <br>
