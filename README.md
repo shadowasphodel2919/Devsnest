@@ -6,3 +6,5 @@
 </div>
 <br>
 This repository contains the assignments completed over the duration of the Devsnest training program
+<a href="https://shadowasphodel2919.github.io/Devsnest/THA1/letter.html">Calculator</a>
+
