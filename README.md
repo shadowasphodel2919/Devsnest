@@ -22,7 +22,7 @@ This repository contains the assignments completed over the duration of the Devs
 <a href="https://afternoon-springs-62172.herokuapp.com/">Counter</a><br>
 <a href="https://afternoon-mountain-55240.herokuapp.com/">Meme Generator</a><br>
 <a href="https://boiling-gorge-61293.herokuapp.com/">Weather App(THA29)</a><br>
-THA25 Sample Page
-THA27 todo with redux
+<a href="https://morning-temple-53903.herokuapp.com/">Instagram(Frontend)</a><br>
+
 
 
